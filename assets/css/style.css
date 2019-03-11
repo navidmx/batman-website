@@ -1,0 +1,133 @@
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: #000000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 2em;
+}
+
+.row {
+    padding: 80px 10%;
+}
+
+.project {
+    perspective: 600px;
+}
+
+/* Colors */
+
+.highlight {
+    color: #ddd;
+}
+
+p, .muted {
+    color: #999;
+}
+
+.bg-gray {
+    background-color: #111;
+}
+
+/* Navbar */
+
+.navbar {
+    display: none;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Project Cards */
+
+.card {
+    transition: transform .5s;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: rotateX(10deg);
+}
+
+/* Contact Form */
+
+.form-control {
+    border: 1px solid #999;
+    background-color: #111;
+    color: #ddd;
+}
+
+.form-group {
+    text-align: left;
+}
+
+label {
+    color: #ddd;
+}
+
+/* Particles */
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    transition: opacity 1s;
+}
+
+#cover {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: none;
+}
+
+#cover img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#cover img.active {
+    z-index: 2;
+}
+
+/* Down Arrow */
+
+#down-arrow {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 0 0 10px 0;
+    bottom: 0;
+    transition: transform .5s;
+    z-index: 3;
+}
+
+#down-arrow:hover {
+    cursor: pointer;
+    transform: translateY(5px);
+}
+
+#down-arrow .fa {
+    color: #6f6f6f;
+    margin-top: -20px;
+    font-size: 5em;
+}
