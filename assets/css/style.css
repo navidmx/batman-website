@@ -42,7 +42,6 @@ p, .muted {
 /* Navbar */
 
 .navbar {
-    display: none;
     position: fixed;
     background-color: black;
     top: 0;
@@ -82,7 +81,6 @@ label {
 #particles-js {
     position: fixed;
     top: 0;
-    opacity: 0;
     width: 100%;
     height: 100vh;
     z-index: -1;

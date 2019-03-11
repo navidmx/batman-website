@@ -2,9 +2,8 @@
 AOS.init();
 particlesJS.load('particles-js', 'assets/js/particles.json');
 
-// Fade in batman shadow
+// Fade in Batman shadow
 $('#cover').fadeIn(2000);
-$("#particles-js").css('opacity', 1);
 $('#cover .active').delay(2000).fadeOut(2000);
 $("#down-arrow").delay(2000).fadeIn(2000);
 
@@ -20,15 +19,12 @@ $('a[href*="#"]').click(function (event) {
     }
 });
 
+// Fade in navbar after scrolling past Batman logo
+$('.navbar').hide();
 $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > window.innerHeight / 2) {
         $('.navbar').fadeIn();
     } else {
         $('.navbar').fadeOut();
     }
-});
-
-$('body').scrollspy({
-    target: '#mainNav',
-    offset: 57
 });
