@@ -28,3 +28,13 @@ $(window).scroll(function () {
         $('.navbar').fadeOut();
     }
 });
+
+// Fade out form upon click
+$("#contactForm").on("click", function () {
+    for (i = this.children.length; i >= 0; i -= 1) {
+        $(this.children[i]).fadeOut(1000);
+    }
+    setTimeout(function(){
+        $("#contactForm").append("<p>You <i>really</i> thought that would work...?</p>");
+    }, 1000);
+})
