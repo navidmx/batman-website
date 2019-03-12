@@ -25,6 +25,12 @@ h2 {
     perspective: 600px;
 }
 
+.fas {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
 /* Colors */
 
 .highlight {
